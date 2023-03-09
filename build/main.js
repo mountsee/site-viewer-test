@@ -113719,6 +113719,8 @@ async function loadIfc(url) {
     viewer.shadowDropper.renderShadow(model.modelID);
 }
 loadIfc('/site-viewer-test/Test.ifc');
+// loadIfc('/Test.ifc');
+// console.log(document.getElementById('Test.ifc'));
 
 window.onmousemove = () => viewer.IFC.selector.prePickIfcItem(true);
 
@@ -113737,7 +113739,7 @@ window.onkeydown = (event) => {
     }
 };
 
-document.getElementById('express_22492')
-.addEventListener('click', () => {
-    viewer.IFC.selector.pickIfcItemsByID(0, [22492], true);
-});
+// document.getElementById('express_22492')
+// .addEventListener('click', () => {
+//     viewer.IFC.selector.pickIfcItemsByID(0, [22492], true);
+// });
