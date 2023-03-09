@@ -113718,7 +113718,7 @@ async function loadIfc(url) {
     const model = await viewer.IFC.loadIfcUrl(url);
     viewer.shadowDropper.renderShadow(model.modelID);
 }
-loadIfc('/Test.ifc');
+loadIfc('site-viewer-test/Test.ifc');
 
 window.onmousemove = () => viewer.IFC.selector.prePickIfcItem(true);
 
