@@ -113714,7 +113714,7 @@ const container = document.getElementById('viewer-container');
 const viewer = new IfcViewerAPI({ container});
 
 async function loadIfc(url) {
-    await viewer.IFC.setWasmPath("/files/");
+    await viewer.IFC.setWasmPath("/site-viewer-test/files/");
     const model = await viewer.IFC.loadIfcUrl(url);
     viewer.shadowDropper.renderShadow(model.modelID);
 }
