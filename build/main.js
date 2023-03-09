@@ -113718,7 +113718,7 @@ async function loadIfc(url) {
     const model = await viewer.IFC.loadIfcUrl(url);
     viewer.shadowDropper.renderShadow(model.modelID);
 }
-loadIfc('/site-viewer-test/Test.ifc');
+loadIfc('/site-viewer-test/test.ifc');
 // loadIfc('/Test.ifc');
 // console.log(document.getElementById('Test.ifc'));
 
