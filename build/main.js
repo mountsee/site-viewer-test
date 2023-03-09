@@ -121009,8 +121009,10 @@
         [IFCOPENINGELEMENT]: false
       });
 
-      model = await viewer.IFC.loadIfc(selectedFile, false);
+    //   model = await viewer.IFC.loadIfc(selectedFile, false);
       // model.material.forEach(mat => mat.side = 2);
+
+	  ifcLoader.load("test.ifc", (ifcModel) => scene.add(ifcModel));
 
       if(first) first = false;
       else {
