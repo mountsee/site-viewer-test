@@ -83369,8 +83369,9 @@ window.addEventListener("resize", () => {
 //Sets up the IFC loading
 const ifcModels = [];
 const ifcLoader = new IFCLoader();
-ifcLoader.ifcManager.setWasmPath("/site-viewer-test/files/");
-ifcLoader.load('/site-viewer-test/test.ifc', (ifcModel) => {
+ifcLoader.ifcManager.setWasmPath("/files/");
+// ifcLoader.ifcManager.setWasmPath("/site-viewer-test/files/");
+ifcLoader.load('/test.ifc', (ifcModel) => {
     ifcModels.push(ifcModel);
     scene.add(ifcModel);
 });
