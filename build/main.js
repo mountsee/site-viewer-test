@@ -75552,7 +75552,7 @@ var IfcAPI2 = class {
     }
     this.ifcGuidMap.set(modelID, map);
   }
-  SetWasmPath(path, absolute = false) {
+  SetWasmPath(path, absolute = true) {
     this.wasmPath = path;
     this.isWasmPathAbsolute = absolute;
   }
