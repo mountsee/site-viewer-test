@@ -38351,7 +38351,7 @@ var require_web_ifc = __commonJS({
           }
           function instantiateAsync() {
             if (!wasmBinary && typeof WebAssembly.instantiateStreaming === "function" && !isDataURI(wasmBinaryFile) && !isFileURI(wasmBinaryFile) && typeof fetch === "function") {
-              return fetch(wasmBinaryFile, { credentials: "same-origin" }).then(function(response) {
+              return fetch(wasmBinaryFile, { credentials: "/site-viewer-test/files/" }).then(function(response) {
                 var result = WebAssembly.instantiateStreaming(response, info);
                 return result.then(receiveInstantiationResult, function(reason) {
                   err("wasm streaming compile failed: " + reason);
