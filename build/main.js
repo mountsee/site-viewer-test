@@ -83424,5 +83424,5 @@ async function pick(event) {
 window.ondblclick = pick;
 
 
-// viewer.IFC.setWasmPath("/site-viewer-test/files/");
-// loadIfc('/site-viewer-test/test.ifc');
+// ifcLoader.ifcManager.setWasmPath("/site-viewer-test/files/");
+// ifcLoader.load('/site-viewer-test/test.ifc', (ifcModel) => {
