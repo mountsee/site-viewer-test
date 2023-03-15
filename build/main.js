@@ -83426,4 +83426,4 @@ window.ondblclick = pick;
 
 
 // ifcLoader.ifcManager.setWasmPath("/site-viewer-test/files/");
-// ifcLoader.load('/site-viewer-test/test.ifc', (ifcModel) => {
+// ifcLoader.load('/site-viewer-test/test.ifc', (ifcModel)
