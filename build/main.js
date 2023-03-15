@@ -83371,7 +83371,7 @@ const ifcModels = [];
 const ifcLoader = new IFCLoader();
 ifcLoader.ifcManager.setWasmPath("/files/");
 // ifcLoader.ifcManager.setWasmPath("/site-viewer-test/files/");
-ifcLoader.load('/test.ifc', (ifcModel) => {
+ifcLoader.load('/site-viewer-test/test.ifc', (ifcModel) => {
     ifcModels.push(ifcModel);
     scene.add(ifcModel);
 });
